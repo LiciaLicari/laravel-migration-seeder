@@ -15,10 +15,11 @@ class TrainsTableSeeder extends Seeder
 
     public function run(Faker $faker): void
     {
+        // $trains = config('trains_data.trains');
 
         for ($i = 0; $i < 20; $i++) {
             $train = new Train();
-            $train->Company = $faker->randomElement('Trenitalia', 'Trenord', 'Italo');
+            $train->Company = $faker->randomElement(['Trenitalia', 'Trenord', 'Italo']);
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
             $train->departure_time = $faker->time('H_i');
@@ -28,6 +29,7 @@ class TrainsTableSeeder extends Seeder
             $train->train_coachload = $faker->numberBetween(3, 20);
             $train->is_delayed = $faker->boolean();
             $train->is_deleted = $faker->boolean();
+            $train->save();
         };
     }
 }
