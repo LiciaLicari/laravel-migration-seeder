@@ -22,9 +22,9 @@ class TrainsTableSeeder extends Seeder
             $train->Company = $faker->randomElement(['Trenitalia', 'Trenord', 'Italo']);
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
-            $train->departure_time = $faker->time('H_i');
-            $train->arrival_time = $faker->time('H_i');
-            $train->departure_date = $faker->date('D_m_y');
+            $train->departure_time = $faker->dateTime('H_i');
+            $train->arrival_time = $faker->dateTime('H_i');
+            $train->date = $faker->date();
             $train->train_code = $faker->bothify('??-######');
             $train->train_coachload = $faker->numberBetween(3, 20);
             $train->is_delayed = $faker->boolean();
