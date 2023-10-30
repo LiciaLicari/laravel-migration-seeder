@@ -12,8 +12,8 @@
                 <h3>Quick Links</h3>
                 <ul class="list-unstyled">
                     <li><a href="">Lorem.</a></li>
-                    <li><a href="">Natus.</a></li>
-                    <li><a href="">Temporibus?</a></li>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Lorem.</a></li>
                 </ul>
                 <!-- /.list-unstyled -->
             </div>
@@ -22,8 +22,8 @@
                 <h3>Legal</h3>
                 <ul class="list-unstyled">
                     <li><a href="">Lorem.</a></li>
-                    <li><a href="">Natus.</a></li>
-                    <li><a href="">Temporibus?</a></li>
+                    <li><a href="">Lorem.</a></li>
+                    <li><a href="">Lorem.</a></li>
                 </ul>
                 <!-- /.list-unstyled -->
             </div>
